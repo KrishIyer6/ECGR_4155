@@ -1,0 +1,722 @@
+2026-04-28 13:37:52  INFO      __main__ â€” Mode: train | Backbone: efficientnet
+2026-04-28 13:37:52  INFO      __main__ â€” Building dataloaders â€¦
+2026-04-28 13:41:48  INFO      __main__ â€” Mode: train | Backbone: efficientnet
+2026-04-28 13:41:48  INFO      __main__ â€” Building dataloaders â€¦
+2026-04-28 13:41:48  INFO      data.dataset â€” Loaded 8144 annotations from /Users/krishiyer/Downloads/vehicle_classifier/stanford_cars/devkit/cars_train_annos.mat
+2026-04-28 13:41:49  INFO      utils.preprocess â€” Image verification: 8144 valid, 0 corrupted
+2026-04-28 13:41:49  INFO      utils.preprocess â€” Class distribution â€” min: 24, max: 68, total classes: 196
+2026-04-28 13:41:49  INFO      data.dataset â€” Split sizes â€” train: 6515, val: 814, test: 815
+2026-04-28 13:41:49  INFO      __main__ â€” Building model: efficientnet_b3
+2026-04-28 13:42:47  INFO      __main__ â€” Mode: train | Backbone: efficientnet
+2026-04-28 13:42:47  INFO      __main__ â€” Building dataloaders â€¦
+2026-04-28 13:42:47  INFO      data.dataset â€” Loaded 8144 annotations from /Users/krishiyer/Downloads/vehicle_classifier/stanford_cars/devkit/cars_train_annos.mat
+2026-04-28 13:42:49  INFO      utils.preprocess â€” Image verification: 8144 valid, 0 corrupted
+2026-04-28 13:42:49  INFO      utils.preprocess â€” Class distribution â€” min: 24, max: 68, total classes: 196
+2026-04-28 13:42:49  INFO      data.dataset â€” Split sizes â€” train: 6515, val: 814, test: 815
+2026-04-28 13:42:49  INFO      __main__ â€” Building model: efficientnet_b3
+2026-04-28 13:43:42  INFO      models.model â€” Built efficientnet_b3 â€” 196 output classes, pretrained=True, dropout=0.30
+2026-04-28 13:43:42  INFO      models.model â€” Model moved to device: mps
+2026-04-28 13:43:42  INFO      __main__ â€” Starting training â€¦
+2026-04-28 13:43:42  INFO      utils.train â€” Using device: mps
+2026-04-28 13:43:42  INFO      utils.train â€” ============================================================
+2026-04-28 13:43:42  INFO      utils.train â€” Stage 1 â€” Warm-up (5 epochs, LR=1e-03)
+2026-04-28 13:43:42  INFO      utils.train â€” ============================================================
+2026-04-28 13:43:42  INFO      models.model â€” Backbone frozen â€” trainable params: 301252 / 10997484
+2026-04-28 13:45:49  INFO      utils.train â€” [Warmup  1/5] train_loss=4.9112  train_acc=0.0740  val_loss=4.3912  val_acc=0.1830  (126.5s)
+2026-04-28 13:47:50  INFO      utils.train â€” [Warmup  2/5] train_loss=4.0004  train_acc=0.2398  val_loss=3.8678  val_acc=0.2641  (121.8s)
+2026-04-28 13:50:01  INFO      utils.train â€” [Warmup  3/5] train_loss=3.4555  train_acc=0.3378  val_loss=3.5071  val_acc=0.3256  (131.0s)
+2026-04-28 13:52:09  INFO      utils.train â€” [Warmup  4/5] train_loss=3.0641  train_acc=0.4091  val_loss=3.2688  val_acc=0.3452  (127.4s)
+2026-04-28 13:54:58  INFO      utils.train â€” [Warmup  5/5] train_loss=2.8082  train_acc=0.4490  val_loss=3.0708  val_acc=0.3759  (169.2s)
+2026-04-28 13:54:58  INFO      utils.train â€” Checkpoint saved â†’ /Users/krishiyer/Downloads/vehicle_classifier/outputs/checkpoints/warmup_efficientnet.pth
+2026-04-28 13:54:58  INFO      utils.train â€” ============================================================
+2026-04-28 13:54:58  INFO      utils.train â€” Stage 2 â€” Fine-tuning (30 epochs, LR=1e-04)
+2026-04-28 13:54:58  INFO      utils.train â€” ============================================================
+2026-04-28 13:54:58  INFO      models.model â€” Backbone unfrozen â€” trainable params: 10997484 / 10997484
+2026-04-28 14:21:47  INFO      utils.train â€” [FT  1/30] train_loss=1.6678  train_acc=0.6393  val_loss=1.3259  val_acc=0.6720  lr=9.97e-05  (1609.2s)
+2026-04-28 14:21:48  INFO      utils.train â€” Checkpoint saved â†’ /Users/krishiyer/Downloads/vehicle_classifier/outputs/checkpoints/best_efficientnet.pth
+2026-04-29 20:46:48  INFO      utils.train â€” [FT  2/30] train_loss=0.9318  train_acc=0.7968  val_loss=0.9158  val_acc=0.7654  lr=9.89e-05  (109500.2s)
+2026-04-29 20:46:48  INFO      utils.train â€” Checkpoint saved â†’ /Users/krishiyer/Downloads/vehicle_classifier/outputs/checkpoints/best_efficientnet.pth
+2026-05-03 16:24:32  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:24:32  INFO      __main__ — Building dataloaders …
+2026-05-03 16:25:00  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:25:00  INFO      __main__ — Building dataloaders …
+2026-05-03 16:25:46  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:25:46  INFO      __main__ — Building dataloaders …
+2026-05-03 16:25:46  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:25:46  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:25:46  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:25:49  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:25:49  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:25:49  INFO      __main__ — Starting training …
+2026-05-03 16:25:49  INFO      utils.train — Using device: cuda
+2026-05-03 16:25:49  INFO      utils.train — ============================================================
+2026-05-03 16:25:49  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:25:49  INFO      utils.train — ============================================================
+2026-05-03 16:25:49  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:28:34  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:28:34  INFO      __main__ — Building dataloaders …
+2026-05-03 16:28:34  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:28:34  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:28:34  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:28:34  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:28:34  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:28:34  INFO      __main__ — Starting training …
+2026-05-03 16:28:34  INFO      utils.train — Using device: cuda
+2026-05-03 16:28:34  INFO      utils.train — ============================================================
+2026-05-03 16:28:34  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:28:34  INFO      utils.train — ============================================================
+2026-05-03 16:28:34  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:29:17  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:29:17  INFO      __main__ — Building dataloaders …
+2026-05-03 16:29:17  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:29:17  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:29:17  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:29:17  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:29:17  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:29:17  INFO      __main__ — Starting training …
+2026-05-03 16:29:17  INFO      utils.train — Using device: cuda
+2026-05-03 16:29:17  INFO      utils.train — ============================================================
+2026-05-03 16:29:17  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:29:17  INFO      utils.train — ============================================================
+2026-05-03 16:29:17  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:31:22  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:31:22  INFO      __main__ — Building dataloaders …
+2026-05-03 16:31:22  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:31:22  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:31:22  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:31:22  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:31:22  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:31:22  INFO      __main__ — Starting training …
+2026-05-03 16:31:22  INFO      utils.train — Using device: cuda
+2026-05-03 16:31:22  INFO      utils.train — ============================================================
+2026-05-03 16:31:22  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:31:22  INFO      utils.train — ============================================================
+2026-05-03 16:31:22  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:31:57  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:31:57  INFO      __main__ — Building dataloaders …
+2026-05-03 16:31:58  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:31:58  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:31:58  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:31:58  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:31:58  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:31:58  INFO      __main__ — Starting training …
+2026-05-03 16:31:58  INFO      utils.train — Using device: cuda
+2026-05-03 16:31:58  INFO      utils.train — ============================================================
+2026-05-03 16:31:58  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:31:58  INFO      utils.train — ============================================================
+2026-05-03 16:31:58  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:33:17  INFO      utils.train — [Warmup  1/5] train_loss=5.0153  train_acc=0.0562  val_loss=4.6191  val_acc=0.1536  (114.3s)
+2026-05-03 16:33:52  INFO      utils.train — [Warmup  1/5] train_loss=5.0190  train_acc=0.0589  val_loss=4.6145  val_acc=0.1462  (114.3s)
+2026-05-03 16:35:07  INFO      utils.train — [Warmup  2/5] train_loss=4.2742  train_acc=0.2221  val_loss=4.1648  val_acc=0.2408  (109.8s)
+2026-05-03 16:35:41  INFO      utils.train — [Warmup  2/5] train_loss=4.2731  train_acc=0.2186  val_loss=4.1596  val_acc=0.2568  (108.7s)
+2026-05-03 16:37:29  INFO      utils.train — [Warmup  3/5] train_loss=3.7709  train_acc=0.3142  val_loss=3.8118  val_acc=0.2912  (108.0s)
+2026-05-03 16:39:16  INFO      utils.train — [Warmup  4/5] train_loss=3.4037  train_acc=0.3906  val_loss=3.5808  val_acc=0.3145  (107.4s)
+2026-05-03 16:42:55  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:42:55  INFO      __main__ — Building dataloaders …
+2026-05-03 16:42:55  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:42:55  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:42:55  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:42:55  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:42:55  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:42:55  INFO      __main__ — Starting training …
+2026-05-03 16:42:55  INFO      utils.train — Using device: cuda
+2026-05-03 16:42:55  INFO      utils.train — ============================================================
+2026-05-03 16:42:55  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:42:55  INFO      utils.train — ============================================================
+2026-05-03 16:42:55  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 16:43:59  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 16:43:59  INFO      __main__ — Building dataloaders …
+2026-05-03 16:43:59  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 16:43:59  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 16:43:59  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 16:43:59  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 16:43:59  INFO      models.model — Model moved to device: cuda
+2026-05-03 16:43:59  INFO      __main__ — Starting training …
+2026-05-03 16:43:59  INFO      utils.train — Using device: cuda
+2026-05-03 16:43:59  INFO      utils.train — ============================================================
+2026-05-03 16:43:59  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 16:43:59  INFO      utils.train — ============================================================
+2026-05-03 16:43:59  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 17:24:20  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 17:24:20  INFO      __main__ — Building dataloaders …
+2026-05-03 17:24:20  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 17:24:20  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 17:24:20  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 17:24:20  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 17:24:21  INFO      models.model — Model moved to device: cuda
+2026-05-03 17:24:21  INFO      __main__ — Starting training …
+2026-05-03 17:24:21  INFO      utils.train — Using device: cuda
+2026-05-03 17:24:21  INFO      utils.train — ============================================================
+2026-05-03 17:24:21  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 17:24:21  INFO      utils.train — ============================================================
+2026-05-03 17:24:21  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 17:25:06  INFO      __main__ — Mode: train | Backbone: efficientnet
+2026-05-03 17:25:06  INFO      __main__ — Building dataloaders …
+2026-05-03 17:25:06  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 17:25:06  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 17:25:06  INFO      __main__ — Building model: efficientnet_b3
+2026-05-03 17:25:06  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 17:25:06  INFO      models.model — Model moved to device: cuda
+2026-05-03 17:25:06  INFO      __main__ — Starting training …
+2026-05-03 17:25:06  INFO      utils.train — Using device: cuda
+2026-05-03 17:25:06  INFO      utils.train — ============================================================
+2026-05-03 17:25:06  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 17:25:06  INFO      utils.train — ============================================================
+2026-05-03 17:25:06  INFO      models.model — Backbone frozen — trainable params: 301252 / 10997484
+2026-05-03 17:26:53  INFO      utils.train — [Warmup  1/5] train_loss=5.0170  train_acc=0.0560  val_loss=4.6214  val_acc=0.1462  (106.9s)
+2026-05-03 17:28:30  INFO      utils.train — [Warmup  2/5] train_loss=4.2703  train_acc=0.2212  val_loss=4.1661  val_acc=0.2506  (97.1s)
+2026-05-03 17:30:07  INFO      utils.train — [Warmup  3/5] train_loss=3.7730  train_acc=0.3167  val_loss=3.8165  val_acc=0.2961  (97.4s)
+2026-05-03 17:31:44  INFO      utils.train — [Warmup  4/5] train_loss=3.4021  train_acc=0.3889  val_loss=3.5856  val_acc=0.3120  (97.0s)
+2026-05-03 17:33:22  INFO      utils.train — [Warmup  5/5] train_loss=3.1181  train_acc=0.4236  val_loss=3.3684  val_acc=0.3415  (97.2s)
+2026-05-03 17:33:22  INFO      utils.train — ============================================================
+2026-05-03 17:33:22  INFO      utils.train — Stage 2 — Fine-tuning (30 epochs, LR=1e-04)
+2026-05-03 17:33:22  INFO      utils.train — ============================================================
+2026-05-03 17:33:22  INFO      models.model — Backbone unfrozen — trainable params: 10997484 / 10997484
+2026-05-03 17:36:54  INFO      utils.train — [FT  1/30] train_loss=2.0611  train_acc=0.5848  val_loss=1.7179  val_acc=0.6044  lr=9.97e-05  (212.3s)
+2026-05-03 17:38:44  INFO      utils.train — [FT  2/30] train_loss=1.2547  train_acc=0.7414  val_loss=1.2272  val_acc=0.7125  lr=9.89e-05  (109.7s)
+2026-05-03 17:40:34  INFO      utils.train — [FT  3/30] train_loss=0.8864  train_acc=0.8160  val_loss=0.9752  val_acc=0.7715  lr=9.76e-05  (110.4s)
+2026-05-03 17:42:25  INFO      utils.train — [FT  4/30] train_loss=0.6586  train_acc=0.8678  val_loss=0.8059  val_acc=0.8084  lr=9.57e-05  (110.3s)
+2026-05-03 17:44:14  INFO      utils.train — [FT  5/30] train_loss=0.4948  train_acc=0.9025  val_loss=0.7138  val_acc=0.8268  lr=9.34e-05  (109.8s)
+2026-05-03 17:46:04  INFO      utils.train — [FT  6/30] train_loss=0.3829  train_acc=0.9325  val_loss=0.6496  val_acc=0.8354  lr=9.05e-05  (109.5s)
+2026-05-03 17:47:54  INFO      utils.train — [FT  7/30] train_loss=0.3056  train_acc=0.9478  val_loss=0.5806  val_acc=0.8489  lr=8.73e-05  (109.9s)
+2026-05-03 17:49:44  INFO      utils.train — [FT  8/30] train_loss=0.2579  train_acc=0.9567  val_loss=0.5484  val_acc=0.8526  lr=8.36e-05  (110.2s)
+2026-05-03 17:51:34  INFO      utils.train — [FT  9/30] train_loss=0.2108  train_acc=0.9685  val_loss=0.5164  val_acc=0.8686  lr=7.96e-05  (109.9s)
+2026-05-03 17:53:24  INFO      utils.train — [FT 10/30] train_loss=0.1783  train_acc=0.9719  val_loss=0.5036  val_acc=0.8661  lr=7.52e-05  (109.3s)
+2026-05-03 17:55:14  INFO      utils.train — [FT 11/30] train_loss=0.1638  train_acc=0.9738  val_loss=0.4913  val_acc=0.8722  lr=7.06e-05  (110.1s)
+2026-05-03 17:57:04  INFO      utils.train — [FT 12/30] train_loss=0.1373  train_acc=0.9796  val_loss=0.4731  val_acc=0.8784  lr=6.58e-05  (110.6s)
+2026-05-03 17:58:55  INFO      utils.train — [FT 13/30] train_loss=0.1282  train_acc=0.9813  val_loss=0.4646  val_acc=0.8747  lr=6.08e-05  (110.5s)
+2026-05-03 18:00:45  INFO      utils.train — [FT 14/30] train_loss=0.1118  train_acc=0.9851  val_loss=0.4525  val_acc=0.8821  lr=5.57e-05  (110.1s)
+2026-05-03 18:02:35  INFO      utils.train — [FT 15/30] train_loss=0.1096  train_acc=0.9850  val_loss=0.4506  val_acc=0.8821  lr=5.05e-05  (110.1s)
+2026-05-03 18:04:25  INFO      utils.train — [FT 16/30] train_loss=0.0952  train_acc=0.9857  val_loss=0.4482  val_acc=0.8796  lr=4.53e-05  (109.9s)
+2026-05-03 18:06:15  INFO      utils.train — [FT 17/30] train_loss=0.0873  train_acc=0.9866  val_loss=0.4474  val_acc=0.8833  lr=4.02e-05  (109.9s)
+2026-05-03 18:08:06  INFO      utils.train — [FT 18/30] train_loss=0.0845  train_acc=0.9885  val_loss=0.4368  val_acc=0.8907  lr=3.52e-05  (110.3s)
+2026-05-03 18:09:56  INFO      utils.train — [FT 19/30] train_loss=0.0804  train_acc=0.9889  val_loss=0.4365  val_acc=0.8907  lr=3.04e-05  (110.2s)
+2026-05-03 18:11:47  INFO      utils.train — [FT 20/30] train_loss=0.0755  train_acc=0.9891  val_loss=0.4292  val_acc=0.8919  lr=2.58e-05  (110.5s)
+2026-05-03 18:13:37  INFO      utils.train — [FT 21/30] train_loss=0.0736  train_acc=0.9900  val_loss=0.4304  val_acc=0.8943  lr=2.14e-05  (110.1s)
+2026-05-03 18:15:27  INFO      utils.train — [FT 22/30] train_loss=0.0750  train_acc=0.9899  val_loss=0.4282  val_acc=0.8919  lr=1.74e-05  (109.8s)
+2026-05-03 18:17:17  INFO      utils.train — [FT 23/30] train_loss=0.0682  train_acc=0.9903  val_loss=0.4281  val_acc=0.8882  lr=1.37e-05  (110.3s)
+2026-05-03 18:19:07  INFO      utils.train — [FT 24/30] train_loss=0.0681  train_acc=0.9906  val_loss=0.4258  val_acc=0.8931  lr=1.05e-05  (110.3s)
+2026-05-03 18:20:58  INFO      utils.train — [FT 25/30] train_loss=0.0631  train_acc=0.9914  val_loss=0.4256  val_acc=0.8907  lr=7.63e-06  (110.6s)
+2026-05-03 18:22:49  INFO      utils.train — [FT 26/30] train_loss=0.0640  train_acc=0.9916  val_loss=0.4248  val_acc=0.8907  lr=5.28e-06  (110.5s)
+2026-05-03 18:24:39  INFO      utils.train — [FT 27/30] train_loss=0.0631  train_acc=0.9917  val_loss=0.4196  val_acc=0.8907  lr=3.42e-06  (110.3s)
+2026-05-03 18:26:29  INFO      utils.train — [FT 28/30] train_loss=0.0606  train_acc=0.9929  val_loss=0.4186  val_acc=0.8907  lr=2.08e-06  (110.4s)
+2026-05-03 18:28:20  INFO      utils.train — [FT 29/30] train_loss=0.0589  train_acc=0.9922  val_loss=0.4184  val_acc=0.8894  lr=1.27e-06  (110.1s)
+2026-05-03 18:30:10  INFO      utils.train — [FT 30/30] train_loss=0.0608  train_acc=0.9914  val_loss=0.4188  val_acc=0.8894  lr=1.00e-06  (110.3s)
+2026-05-03 18:30:10  INFO      utils.train — Reloading best checkpoint from F:\CODE\vehicle_project\outputs\checkpoints\best_efficientnet.pth
+2026-05-03 18:30:10  INFO      __main__ — Training complete. Running evaluation on held-out test set …
+2026-05-03 19:26:01  INFO      __main__ — Mode: evaluate | Backbone: efficientnet
+2026-05-03 19:26:01  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 19:26:01  INFO      models.model — Model moved to device: cuda
+2026-05-03 19:26:01  INFO      utils.train — Checkpoint loaded <- outputs/checkpoints/best_efficientnet.pth
+2026-05-03 19:26:01  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 19:26:01  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 19:26:01  INFO      utils.evaluate — ============================================================
+2026-05-03 19:26:01  INFO      utils.evaluate — Running evaluation suite — backbone: efficientnet
+2026-05-03 19:26:01  INFO      utils.evaluate — ============================================================
+2026-05-03 19:27:56  INFO      utils.evaluate — top1 accuracy: 0.8945 (89.45%)
+2026-05-03 19:27:56  INFO      utils.evaluate — top5 accuracy: 0.9779 (97.79%)
+2026-05-03 19:28:31  INFO      __main__ — Mode: evaluate | Backbone: efficientnet
+2026-05-03 19:28:31  INFO      models.model — Built efficientnet_b3 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 19:28:31  INFO      models.model — Model moved to device: cuda
+2026-05-03 19:28:31  INFO      utils.train — Checkpoint loaded <- outputs/checkpoints/best_efficientnet.pth
+2026-05-03 19:28:31  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 19:28:31  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 19:28:31  INFO      utils.evaluate — ============================================================
+2026-05-03 19:28:31  INFO      utils.evaluate — Running evaluation suite — backbone: efficientnet
+2026-05-03 19:28:31  INFO      utils.evaluate — ============================================================
+2026-05-03 19:29:19  INFO      utils.evaluate — top1 accuracy: 0.8945 (89.45%)
+2026-05-03 19:29:19  INFO      utils.evaluate — top5 accuracy: 0.9779 (97.79%)
+2026-05-03 19:29:19  INFO      utils.evaluate — 
+                                                        precision    recall  f1-score   support
+
+                            AM General Hummer SUV 2000     1.0000    1.0000    1.0000         3
+                                   Acura RL Sedan 2012     0.0000    0.0000    0.0000         3
+                                   Acura TL Sedan 2012     0.7500    0.6000    0.6667         5
+                                  Acura TL Type-S 2008     1.0000    1.0000    1.0000         2
+                                  Acura TSX Sedan 2012     0.4000    1.0000    0.5714         2
+                             Acura Integra Type R 2001     1.0000    1.0000    1.0000         4
+                              Acura ZDX Hatchback 2012     0.8000    0.8000    0.8000         5
+              Aston Martin V8 Vantage Convertible 2012     0.5000    0.8000    0.6154         5
+                    Aston Martin V8 Vantage Coupe 2012     1.0000    0.2500    0.4000         4
+                  Aston Martin Virage Convertible 2012     0.5000    0.6667    0.5714         3
+                        Aston Martin Virage Coupe 2012     0.3333    0.5000    0.4000         2
+                            Audi RS 4 Convertible 2008     1.0000    0.3333    0.5000         3
+                                    Audi A5 Coupe 2012     0.4000    1.0000    0.5714         2
+                                   Audi TTS Coupe 2012     0.5000    0.6667    0.5714         3
+                                    Audi R8 Coupe 2012     1.0000    0.6000    0.7500         5
+                                    Audi V8 Sedan 1994     0.3333    0.5000    0.4000         2
+                                   Audi 100 Sedan 1994     1.0000    0.5714    0.7273         7
+                                   Audi 100 Wagon 1994     0.7500    1.0000    0.8571         6
+                                Audi TT Hatchback 2011     0.6667    0.5000    0.5714         4
+                                    Audi S6 Sedan 2011     0.7500    1.0000    0.8571         3
+                              Audi S5 Convertible 2012     0.6000    1.0000    0.7500         3
+                                    Audi S5 Coupe 2012     0.0000    0.0000    0.0000         5
+                                    Audi S4 Sedan 2012     0.8000    1.0000    0.8889         4
+                                    Audi S4 Sedan 2007     1.0000    1.0000    1.0000         2
+                                 Audi TT RS Coupe 2012     1.0000    1.0000    1.0000         3
+                         BMW ActiveHybrid 5 Sedan 2012     1.0000    0.6667    0.8000         3
+                         BMW 1 Series Convertible 2012     1.0000    0.6667    0.8000         3
+                               BMW 1 Series Coupe 2012     1.0000    1.0000    1.0000         5
+                               BMW 3 Series Sedan 2012     0.8000    1.0000    0.8889         4
+                               BMW 3 Series Wagon 2012     0.8000    1.0000    0.8889         4
+                         BMW 6 Series Convertible 2007     0.6667    1.0000    0.8000         4
+                                       BMW X5 SUV 2007     1.0000    1.0000    1.0000         8
+                                       BMW X6 SUV 2012     1.0000    1.0000    1.0000         2
+                                     BMW M3 Coupe 2012     1.0000    1.0000    1.0000         5
+                                     BMW M5 Sedan 2010     1.0000    1.0000    1.0000         2
+                               BMW M6 Convertible 2010     1.0000    0.8000    0.8889         5
+                                       BMW X3 SUV 2012     1.0000    1.0000    1.0000         6
+                               BMW Z4 Convertible 2012     1.0000    0.8333    0.9091         6
+Bentley Continental Supersports Conv. Convertible 2012     1.0000    1.0000    1.0000         6
+                             Bentley Arnage Sedan 2009     1.0000    1.0000    1.0000         5
+                           Bentley Mulsanne Sedan 2011     1.0000    1.0000    1.0000         8
+                     Bentley Continental GT Coupe 2012     1.0000    0.5000    0.6667         2
+                     Bentley Continental GT Coupe 2007     0.8000    1.0000    0.8889         4
+            Bentley Continental Flying Spur Sedan 2007     1.0000    1.0000    1.0000         6
+                  Bugatti Veyron 16.4 Convertible 2009     0.4286    0.6000    0.5000         5
+                        Bugatti Veyron 16.4 Coupe 2009     0.7143    0.6250    0.6667         8
+                                   Buick Regal GS 2012     0.5000    1.0000    0.6667         1
+                                Buick Rainier SUV 2007     1.0000    1.0000    1.0000         4
+                               Buick Verano Sedan 2012     1.0000    0.5000    0.6667         2
+                                Buick Enclave SUV 2012     1.0000    1.0000    1.0000         5
+                             Cadillac CTS-V Sedan 2012     1.0000    1.0000    1.0000         6
+                                 Cadillac SRX SUV 2012     1.0000    1.0000    1.0000         3
+                   Cadillac Escalade EXT Crew Cab 2007     1.0000    0.8750    0.9333         8
+         Chevrolet Silverado 1500 Hybrid Crew Cab 2012     0.5000    0.3333    0.4000         3
+                   Chevrolet Corvette Convertible 2012     1.0000    0.7778    0.8750         9
+                           Chevrolet Corvette ZR1 2012     1.0000    0.8000    0.8889         5
+       Chevrolet Corvette Ron Fellows Edition Z06 2007     0.5000    1.0000    0.6667         3
+                           Chevrolet Traverse SUV 2012     1.0000    0.8000    0.8889         5
+                     Chevrolet Camaro Convertible 2012     1.0000    1.0000    1.0000         4
+                                 Chevrolet HHR SS 2010     0.0000    0.0000    0.0000         0
+                           Chevrolet Impala Sedan 2007     0.8000    1.0000    0.8889         4
+                       Chevrolet Tahoe Hybrid SUV 2012     1.0000    1.0000    1.0000         2
+                            Chevrolet Sonic Sedan 2012     1.0000    0.8333    0.9091         6
+                      Chevrolet Express Cargo Van 2007     1.0000    0.7500    0.8571         4
+                     Chevrolet Avalanche Crew Cab 2012     1.0000    0.8000    0.8889         5
+                              Chevrolet Cobalt SS 2010     1.0000    1.0000    1.0000         5
+                    Chevrolet Malibu Hybrid Sedan 2010     1.0000    0.7143    0.8333         7
+                         Chevrolet TrailBlazer SS 2009     1.0000    1.0000    1.0000         8
+           Chevrolet Silverado 2500HD Regular Cab 2012     0.6667    0.6667    0.6667         3
+    Chevrolet Silverado 1500 Classic Extended Cab 2007     1.0000    1.0000    1.0000         3
+                            Chevrolet Express Van 2007     0.5000    1.0000    0.6667         1
+                      Chevrolet Monte Carlo Coupe 2007     0.8571    1.0000    0.9231         6
+                           Chevrolet Malibu Sedan 2007     1.0000    0.8571    0.9231         7
+            Chevrolet Silverado 1500 Extended Cab 2012     0.5000    0.6667    0.5714         3
+             Chevrolet Silverado 1500 Regular Cab 2012     0.6667    0.6667    0.6667         3
+                               Chrysler Aspen SUV 2009     1.0000    0.8571    0.9231         7
+                     Chrysler Sebring Convertible 2010     1.0000    1.0000    1.0000         3
+                Chrysler Town and Country Minivan 2012     1.0000    1.0000    1.0000         8
+                               Chrysler 300 SRT-8 2010     0.8333    1.0000    0.9091         5
+                   Chrysler Crossfire Convertible 2008     1.0000    1.0000    1.0000         4
+                  Chrysler PT Cruiser Convertible 2008     1.0000    1.0000    1.0000         5
+                              Daewoo Nubira Wagon 2002     1.0000    1.0000    1.0000         5
+                              Dodge Caliber Wagon 2012     0.0000    0.0000    0.0000         1
+                              Dodge Caliber Wagon 2007     0.8000    0.8000    0.8000         5
+                            Dodge Caravan Minivan 1997     1.0000    1.0000    1.0000         3
+                   Dodge Ram Pickup 3500 Crew Cab 2010     1.0000    1.0000    1.0000         4
+                   Dodge Ram Pickup 3500 Quad Cab 2009     0.7500    1.0000    0.8571         3
+                         Dodge Sprinter Cargo Van 2009     1.0000    1.0000    1.0000         2
+                                Dodge Journey SUV 2012     1.0000    1.0000    1.0000         3
+                            Dodge Dakota Crew Cab 2010     1.0000    1.0000    1.0000         5
+                            Dodge Dakota Club Cab 2007     1.0000    1.0000    1.0000         4
+                               Dodge Magnum Wagon 2008     0.7500    1.0000    0.8571         3
+                            Dodge Challenger SRT8 2011     0.5000    1.0000    0.6667         1
+                                Dodge Durango SUV 2012     0.0000    0.0000    0.0000         1
+                                Dodge Durango SUV 2007     1.0000    1.0000    1.0000         6
+                              Dodge Charger Sedan 2012     1.0000    0.6250    0.7692         8
+                              Dodge Charger SRT-8 2009     0.6667    1.0000    0.8000         4
+                            Eagle Talon Hatchback 1998     1.0000    0.8000    0.8889         5
+                                  FIAT 500 Abarth 2012     1.0000    1.0000    1.0000         3
+                             FIAT 500 Convertible 2012     1.0000    1.0000    1.0000         5
+                                 Ferrari FF Coupe 2012     1.0000    1.0000    1.0000         2
+                   Ferrari California Convertible 2012     1.0000    1.0000    1.0000         4
+                   Ferrari 458 Italia Convertible 2012     0.8000    1.0000    0.8889         4
+                         Ferrari 458 Italia Coupe 2012     1.0000    0.5000    0.6667         2
+                               Fisker Karma Sedan 2012     1.0000    0.7500    0.8571         4
+                   Ford F-450 Super Duty Crew Cab 2012     0.7500    1.0000    0.8571         3
+                         Ford Mustang Convertible 2007     1.0000    1.0000    1.0000         2
+                            Ford Freestar Minivan 2007     1.0000    0.8333    0.9091         6
+                           Ford Expedition EL SUV 2009     1.0000    1.0000    1.0000         7
+                                    Ford Edge SUV 2012     0.6667    0.6667    0.6667         3
+                             Ford Ranger SuperCab 2011     1.0000    0.8333    0.9091         6
+                                    Ford GT Coupe 2006     1.0000    1.0000    1.0000         4
+                           Ford F-150 Regular Cab 2012     1.0000    1.0000    1.0000         2
+                           Ford F-150 Regular Cab 2007     1.0000    1.0000    1.0000         3
+                                 Ford Focus Sedan 2007     1.0000    1.0000    1.0000         8
+                          Ford E-Series Wagon Van 2012     1.0000    1.0000    1.0000         4
+                                Ford Fiesta Sedan 2012     1.0000    1.0000    1.0000         7
+                                  GMC Terrain SUV 2012     1.0000    1.0000    1.0000         1
+                                   GMC Savana Van 2012     1.0000    1.0000    1.0000         4
+                             GMC Yukon Hybrid SUV 2012     1.0000    1.0000    1.0000         4
+                                   GMC Acadia SUV 2012     0.7500    1.0000    0.8571         3
+                          GMC Canyon Extended Cab 2012     1.0000    1.0000    1.0000         4
+                            Geo Metro Convertible 1993     1.0000    1.0000    1.0000         3
+                              HUMMER H3T Crew Cab 2010     1.0000    1.0000    1.0000         4
+                           HUMMER H2 SUT Crew Cab 2009     1.0000    1.0000    1.0000         2
+                            Honda Odyssey Minivan 2012     0.8333    1.0000    0.9091         5
+                            Honda Odyssey Minivan 2007     1.0000    1.0000    1.0000         5
+                               Honda Accord Coupe 2012     1.0000    1.0000    1.0000         1
+                               Honda Accord Sedan 2012     1.0000    1.0000    1.0000         5
+                       Hyundai Veloster Hatchback 2012     1.0000    1.0000    1.0000         4
+                             Hyundai Santa Fe SUV 2012     1.0000    1.0000    1.0000         4
+                               Hyundai Tucson SUV 2012     1.0000    1.0000    1.0000         2
+                             Hyundai Veracruz SUV 2012     1.0000    1.0000    1.0000         2
+                      Hyundai Sonata Hybrid Sedan 2012     1.0000    1.0000    1.0000         7
+                            Hyundai Elantra Sedan 2007     1.0000    1.0000    1.0000         2
+                             Hyundai Accent Sedan 2012     1.0000    1.0000    1.0000         2
+                            Hyundai Genesis Sedan 2012     1.0000    1.0000    1.0000         1
+                             Hyundai Sonata Sedan 2012     0.8571    0.8571    0.8571         7
+                Hyundai Elantra Touring Hatchback 2012     0.6667    0.6667    0.6667         3
+                              Hyundai Azera Sedan 2012     0.8000    0.8000    0.8000         5
+                             Infiniti G Coupe IPL 2012     1.0000    1.0000    1.0000         3
+                                Infiniti QX56 SUV 2011     1.0000    1.0000    1.0000         5
+                               Isuzu Ascender SUV 2008     0.5000    1.0000    0.6667         1
+                                    Jaguar XK XKR 2012     1.0000    0.7778    0.8750         9
+                                 Jeep Patriot SUV 2012     1.0000    1.0000    1.0000         2
+                                Jeep Wrangler SUV 2012     1.0000    1.0000    1.0000         5
+                                 Jeep Liberty SUV 2012     1.0000    1.0000    1.0000         4
+                          Jeep Grand Cherokee SUV 2012     1.0000    1.0000    1.0000        10
+                                 Jeep Compass SUV 2012     1.0000    1.0000    1.0000         3
+                       Lamborghini Reventon Coupe 2008     0.8889    1.0000    0.9412         8
+                      Lamborghini Aventador Coupe 2012     1.0000    0.8182    0.9000        11
+       Lamborghini Gallardo LP 570-4 Superleggera 2012     0.7500    1.0000    0.8571         3
+                         Lamborghini Diablo Coupe 2001     1.0000    1.0000    1.0000         2
+                       Land Rover Range Rover SUV 2012     0.7500    1.0000    0.8571         3
+                               Land Rover LR2 SUV 2012     1.0000    1.0000    1.0000         3
+                           Lincoln Town Car Sedan 2011     1.0000    1.0000    1.0000         4
+                 MINI Cooper Roadster Convertible 2012     1.0000    0.9000    0.9474        10
+                    Maybach Landaulet Convertible 2012     1.0000    1.0000    1.0000         1
+                                Mazda Tribute SUV 2011     1.0000    1.0000    1.0000         4
+                            McLaren MP4-12C Coupe 2012     1.0000    1.0000    1.0000         2
+              Mercedes-Benz 300-Class Convertible 1993     0.8000    1.0000    0.8889         4
+                      Mercedes-Benz C-Class Sedan 2012     1.0000    1.0000    1.0000         4
+                     Mercedes-Benz SL-Class Coupe 2009     1.0000    1.0000    1.0000         3
+                      Mercedes-Benz E-Class Sedan 2012     0.8750    0.8750    0.8750         8
+                      Mercedes-Benz S-Class Sedan 2012     0.8000    1.0000    0.8889         4
+                       Mercedes-Benz Sprinter Van 2012     1.0000    1.0000    1.0000         5
+                          Mitsubishi Lancer Sedan 2012     1.0000    1.0000    1.0000         6
+                            Nissan Leaf Hatchback 2012     0.8000    1.0000    0.8889         4
+                          Nissan NV Passenger Van 2012     1.0000    1.0000    1.0000         5
+                            Nissan Juke Hatchback 2012     0.8571    1.0000    0.9231         6
+                               Nissan 240SX Coupe 1998     1.0000    1.0000    1.0000         3
+                              Plymouth Neon Coupe 1999     1.0000    0.7500    0.8571         4
+                           Porsche Panamera Sedan 2012     1.0000    1.0000    1.0000         6
+                        Ram C/V Cargo Van Minivan 2012     0.6000    1.0000    0.7500         3
+   Rolls-Royce Phantom Drophead Coupe Convertible 2012     1.0000    1.0000    1.0000         5
+                          Rolls-Royce Ghost Sedan 2012     0.7500    0.7500    0.7500         4
+                        Rolls-Royce Phantom Sedan 2012     0.7500    0.7500    0.7500         4
+                               Scion xD Hatchback 2012     1.0000    1.0000    1.0000         3
+                            Spyker C8 Convertible 2009     0.4000    1.0000    0.5714         2
+                                  Spyker C8 Coupe 2009     1.0000    0.7143    0.8333         7
+                               Suzuki Aerio Sedan 2007     1.0000    1.0000    1.0000         2
+                             Suzuki Kizashi Sedan 2012     1.0000    1.0000    1.0000         2
+                             Suzuki SX4 Hatchback 2012     1.0000    0.8750    0.9333         8
+                                 Suzuki SX4 Sedan 2012     1.0000    1.0000    1.0000         2
+                              Tesla Model S Sedan 2012     0.6667    1.0000    0.8000         2
+                               Toyota Sequoia SUV 2012     1.0000    1.0000    1.0000         4
+                               Toyota Camry Sedan 2012     1.0000    0.8000    0.8889         5
+                             Toyota Corolla Sedan 2012     1.0000    1.0000    1.0000         3
+                               Toyota 4Runner SUV 2012     1.0000    1.0000    1.0000         9
+                        Volkswagen Golf Hatchback 2012     1.0000    1.0000    1.0000         5
+                        Volkswagen Golf Hatchback 1991     0.6667    1.0000    0.8000         2
+                      Volkswagen Beetle Hatchback 2012     1.0000    1.0000    1.0000         5
+                              Volvo C30 Hatchback 2012     0.8000    0.8000    0.8000         5
+                                  Volvo 240 Sedan 1993     1.0000    1.0000    1.0000         4
+                                   Volvo XC90 SUV 2007     1.0000    0.5000    0.6667         2
+                         smart fortwo Convertible 2012     1.0000    1.0000    1.0000         2
+
+                                              accuracy                         0.8945       815
+                                             macro avg     0.8768    0.8868    0.8682       815
+                                          weighted avg     0.9109    0.8945    0.8922       815
+
+2026-05-03 19:29:19  INFO      utils.evaluate — Per-class report saved -> F:\CODE\vehicle_project\outputs\visualizations\classification_report_efficientnet.txt
+2026-05-03 19:29:20  INFO      utils.evaluate — Confusion matrix saved -> F:\CODE\vehicle_project\outputs\visualizations\confusion_matrix_efficientnet.png
+2026-05-03 19:30:36  INFO      utils.evaluate — Grad-CAM grid saved -> F:\CODE\vehicle_project\outputs\visualizations\efficientnet\gradcam_grid.png
+2026-05-03 19:30:36  INFO      utils.evaluate — Evaluation complete — top-1: 89.45%  top-5: 97.79%
+2026-05-03 20:02:33  INFO      __main__ — Mode: train | Backbone: resnet50
+2026-05-03 20:02:33  INFO      __main__ — Building dataloaders …
+2026-05-03 20:02:33  INFO      data.dataset — Loaded 8144 annotations from F:\CODE\vehicle_project\stanford_cars\devkit\cars_train_annos.mat
+2026-05-03 20:02:33  INFO      data.dataset — Split sizes — train: 6515, val: 814, test: 815
+2026-05-03 20:02:33  INFO      __main__ — Building model: resnet50
+2026-05-03 20:02:51  INFO      models.model — Built resnet50 — 196 output classes, pretrained=True, dropout=0.30
+2026-05-03 20:02:52  INFO      models.model — Model moved to device: cuda
+2026-05-03 20:02:52  INFO      __main__ — Starting training …
+2026-05-03 20:02:52  INFO      utils.train — Using device: cuda
+2026-05-03 20:02:52  INFO      utils.train — ============================================================
+2026-05-03 20:02:52  INFO      utils.train — Stage 1 — Warm-up (5 epochs, LR=1e-03)
+2026-05-03 20:02:52  INFO      utils.train — ============================================================
+2026-05-03 20:02:52  INFO      models.model — Backbone frozen — trainable params: 401604 / 23909636
+2026-05-03 20:04:47  INFO      utils.train — [Warmup  1/5] train_loss=5.0390  train_acc=0.0488  val_loss=4.7325  val_acc=0.1069  (115.8s)
+2026-05-03 20:06:35  INFO      utils.train — [Warmup  2/5] train_loss=4.3919  train_acc=0.1850  val_loss=4.3528  val_acc=0.1904  (107.7s)
+2026-05-03 20:08:26  INFO      utils.train — [Warmup  3/5] train_loss=3.9682  train_acc=0.2867  val_loss=4.0602  val_acc=0.2457  (111.0s)
+2026-05-03 20:10:26  INFO      utils.train — [Warmup  4/5] train_loss=3.6385  train_acc=0.3583  val_loss=3.8596  val_acc=0.2383  (119.5s)
+2026-05-03 20:12:46  INFO      utils.train — [Warmup  5/5] train_loss=3.3636  train_acc=0.4100  val_loss=3.6771  val_acc=0.2985  (140.4s)
+2026-05-03 20:12:46  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\warmup_resnet50.pth
+2026-05-03 20:12:46  INFO      utils.train — ============================================================
+2026-05-03 20:12:46  INFO      utils.train — Stage 2 — Fine-tuning (30 epochs, LR=1e-04)
+2026-05-03 20:12:46  INFO      utils.train — ============================================================
+2026-05-03 20:12:46  INFO      models.model — Backbone unfrozen — trainable params: 23909636 / 23909636
+2026-05-03 20:15:25  INFO      utils.train — [FT  1/30] train_loss=1.6846  train_acc=0.6198  val_loss=1.2959  val_acc=0.6597  lr=9.97e-05  (158.5s)
+2026-05-03 20:15:25  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:17:34  INFO      utils.train — [FT  2/30] train_loss=0.7643  train_acc=0.8269  val_loss=0.8634  val_acc=0.7740  lr=9.89e-05  (129.6s)
+2026-05-03 20:17:34  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:19:44  INFO      utils.train — [FT  3/30] train_loss=0.4492  train_acc=0.9028  val_loss=0.7307  val_acc=0.8120  lr=9.76e-05  (129.9s)
+2026-05-03 20:19:45  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:21:55  INFO      utils.train — [FT  4/30] train_loss=0.2931  train_acc=0.9434  val_loss=0.6271  val_acc=0.8256  lr=9.57e-05  (130.1s)
+2026-05-03 20:21:55  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:24:05  INFO      utils.train — [FT  5/30] train_loss=0.2044  train_acc=0.9604  val_loss=0.5915  val_acc=0.8317  lr=9.34e-05  (130.5s)
+2026-05-03 20:24:05  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:26:19  INFO      utils.train — [FT  6/30] train_loss=0.1480  train_acc=0.9718  val_loss=0.5336  val_acc=0.8378  lr=9.05e-05  (133.7s)
+2026-05-03 20:26:19  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:28:31  INFO      utils.train — [FT  7/30] train_loss=0.1125  train_acc=0.9830  val_loss=0.5311  val_acc=0.8452  lr=8.73e-05  (132.4s)
+2026-05-03 20:28:32  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:30:45  INFO      utils.train — [FT  8/30] train_loss=0.0862  train_acc=0.9882  val_loss=0.4980  val_acc=0.8698  lr=8.36e-05  (133.5s)
+2026-05-03 20:30:45  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:32:55  INFO      utils.train — [FT  9/30] train_loss=0.0736  train_acc=0.9863  val_loss=0.5148  val_acc=0.8575  lr=7.96e-05  (130.0s)
+2026-05-03 20:35:00  INFO      utils.train — [FT 10/30] train_loss=0.0636  train_acc=0.9908  val_loss=0.4739  val_acc=0.8771  lr=7.52e-05  (125.2s)
+2026-05-03 20:35:00  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:37:09  INFO      utils.train — [FT 11/30] train_loss=0.0545  train_acc=0.9905  val_loss=0.4926  val_acc=0.8686  lr=7.06e-05  (128.6s)
+2026-05-03 20:39:22  INFO      utils.train — [FT 12/30] train_loss=0.0489  train_acc=0.9917  val_loss=0.4755  val_acc=0.8735  lr=6.58e-05  (132.7s)
+2026-05-03 20:41:33  INFO      utils.train — [FT 13/30] train_loss=0.0418  train_acc=0.9945  val_loss=0.4588  val_acc=0.8808  lr=6.08e-05  (131.5s)
+2026-05-03 20:41:33  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:43:52  INFO      utils.train — [FT 14/30] train_loss=0.0400  train_acc=0.9942  val_loss=0.4558  val_acc=0.8771  lr=5.57e-05  (138.7s)
+2026-05-03 20:43:52  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:46:06  INFO      utils.train — [FT 15/30] train_loss=0.0386  train_acc=0.9946  val_loss=0.4536  val_acc=0.8759  lr=5.05e-05  (134.1s)
+2026-05-03 20:46:06  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:48:24  INFO      utils.train — [FT 16/30] train_loss=0.0303  train_acc=0.9959  val_loss=0.4464  val_acc=0.8870  lr=4.53e-05  (137.3s)
+2026-05-03 20:48:24  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:50:34  INFO      utils.train — [FT 17/30] train_loss=0.0283  train_acc=0.9959  val_loss=0.4420  val_acc=0.8857  lr=4.02e-05  (130.5s)
+2026-05-03 20:50:34  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:52:49  INFO      utils.train — [FT 18/30] train_loss=0.0286  train_acc=0.9959  val_loss=0.4527  val_acc=0.8796  lr=3.52e-05  (134.9s)
+2026-05-03 20:55:00  INFO      utils.train — [FT 19/30] train_loss=0.0265  train_acc=0.9966  val_loss=0.4548  val_acc=0.8759  lr=3.04e-05  (130.4s)
+2026-05-03 20:57:13  INFO      utils.train — [FT 20/30] train_loss=0.0242  train_acc=0.9968  val_loss=0.4311  val_acc=0.8870  lr=2.58e-05  (133.0s)
+2026-05-03 20:57:13  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 20:59:24  INFO      utils.train — [FT 21/30] train_loss=0.0243  train_acc=0.9963  val_loss=0.4338  val_acc=0.8907  lr=2.14e-05  (130.8s)
+2026-05-03 21:01:35  INFO      utils.train — [FT 22/30] train_loss=0.0233  train_acc=0.9960  val_loss=0.4358  val_acc=0.8907  lr=1.74e-05  (131.0s)
+2026-05-03 21:03:42  INFO      utils.train — [FT 23/30] train_loss=0.0217  train_acc=0.9968  val_loss=0.4342  val_acc=0.8907  lr=1.37e-05  (127.8s)
+2026-05-03 21:05:52  INFO      utils.train — [FT 24/30] train_loss=0.0178  train_acc=0.9982  val_loss=0.4387  val_acc=0.8943  lr=1.05e-05  (129.8s)
+2026-05-03 21:08:12  INFO      utils.train — [FT 25/30] train_loss=0.0185  train_acc=0.9972  val_loss=0.4301  val_acc=0.8919  lr=7.63e-06  (139.4s)
+2026-05-03 21:08:12  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 21:10:20  INFO      utils.train — [FT 26/30] train_loss=0.0195  train_acc=0.9965  val_loss=0.4312  val_acc=0.8956  lr=5.28e-06  (127.9s)
+2026-05-03 21:12:29  INFO      utils.train — [FT 27/30] train_loss=0.0196  train_acc=0.9960  val_loss=0.4309  val_acc=0.8956  lr=3.42e-06  (129.8s)
+2026-05-03 21:14:36  INFO      utils.train — [FT 28/30] train_loss=0.0188  train_acc=0.9972  val_loss=0.4350  val_acc=0.8943  lr=2.08e-06  (126.6s)
+2026-05-03 21:16:42  INFO      utils.train — [FT 29/30] train_loss=0.0165  train_acc=0.9979  val_loss=0.4332  val_acc=0.8943  lr=1.27e-06  (126.4s)
+2026-05-03 21:18:48  INFO      utils.train — [FT 30/30] train_loss=0.0178  train_acc=0.9974  val_loss=0.4286  val_acc=0.8943  lr=1.00e-06  (125.4s)
+2026-05-03 21:18:48  INFO      utils.train — Checkpoint saved -> F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 21:18:48  INFO      utils.train — Reloading best checkpoint from F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 21:18:48  INFO      utils.train — Checkpoint loaded <- F:\CODE\vehicle_project\outputs\checkpoints\best_resnet50.pth
+2026-05-03 21:18:48  INFO      __main__ — Training complete. Running evaluation on held-out test set …
+2026-05-03 21:18:48  INFO      utils.evaluate — ============================================================
+2026-05-03 21:18:48  INFO      utils.evaluate — Running evaluation suite — backbone: resnet50
+2026-05-03 21:18:48  INFO      utils.evaluate — ============================================================
+2026-05-03 21:19:47  INFO      utils.evaluate — top1 accuracy: 0.8748 (87.48%)
+2026-05-03 21:19:47  INFO      utils.evaluate — top5 accuracy: 0.9816 (98.16%)
+2026-05-03 21:19:47  INFO      utils.evaluate — 
+                                                        precision    recall  f1-score   support
+
+                            AM General Hummer SUV 2000     1.0000    1.0000    1.0000         3
+                                   Acura RL Sedan 2012     0.0000    0.0000    0.0000         3
+                                   Acura TL Sedan 2012     0.7500    0.6000    0.6667         5
+                                  Acura TL Type-S 2008     1.0000    1.0000    1.0000         2
+                                  Acura TSX Sedan 2012     0.4000    1.0000    0.5714         2
+                             Acura Integra Type R 2001     1.0000    1.0000    1.0000         4
+                              Acura ZDX Hatchback 2012     1.0000    0.8000    0.8889         5
+              Aston Martin V8 Vantage Convertible 2012     0.6250    1.0000    0.7692         5
+                    Aston Martin V8 Vantage Coupe 2012     1.0000    0.5000    0.6667         4
+                  Aston Martin Virage Convertible 2012     0.6667    0.6667    0.6667         3
+                        Aston Martin Virage Coupe 2012     1.0000    0.5000    0.6667         2
+                            Audi RS 4 Convertible 2008     1.0000    0.3333    0.5000         3
+                                    Audi A5 Coupe 2012     0.4000    1.0000    0.5714         2
+                                   Audi TTS Coupe 2012     0.6667    0.6667    0.6667         3
+                                    Audi R8 Coupe 2012     0.8333    1.0000    0.9091         5
+                                    Audi V8 Sedan 1994     0.3333    0.5000    0.4000         2
+                                   Audi 100 Sedan 1994     1.0000    0.4286    0.6000         7
+                                   Audi 100 Wagon 1994     0.5714    0.6667    0.6154         6
+                                Audi TT Hatchback 2011     0.7500    0.7500    0.7500         4
+                                    Audi S6 Sedan 2011     1.0000    1.0000    1.0000         3
+                              Audi S5 Convertible 2012     0.6000    1.0000    0.7500         3
+                                    Audi S5 Coupe 2012     1.0000    0.2000    0.3333         5
+                                    Audi S4 Sedan 2012     0.7500    0.7500    0.7500         4
+                                    Audi S4 Sedan 2007     1.0000    1.0000    1.0000         2
+                                 Audi TT RS Coupe 2012     1.0000    1.0000    1.0000         3
+                         BMW ActiveHybrid 5 Sedan 2012     0.6667    0.6667    0.6667         3
+                         BMW 1 Series Convertible 2012     1.0000    0.6667    0.8000         3
+                               BMW 1 Series Coupe 2012     1.0000    1.0000    1.0000         5
+                               BMW 3 Series Sedan 2012     0.8000    1.0000    0.8889         4
+                               BMW 3 Series Wagon 2012     0.6000    0.7500    0.6667         4
+                         BMW 6 Series Convertible 2007     0.8000    1.0000    0.8889         4
+                                       BMW X5 SUV 2007     0.8571    0.7500    0.8000         8
+                                       BMW X6 SUV 2012     1.0000    1.0000    1.0000         2
+                                     BMW M3 Coupe 2012     1.0000    1.0000    1.0000         5
+                                     BMW M5 Sedan 2010     1.0000    1.0000    1.0000         2
+                               BMW M6 Convertible 2010     0.8000    0.8000    0.8000         5
+                                       BMW X3 SUV 2012     1.0000    0.8333    0.9091         6
+                               BMW Z4 Convertible 2012     1.0000    0.8333    0.9091         6
+Bentley Continental Supersports Conv. Convertible 2012     1.0000    1.0000    1.0000         6
+                             Bentley Arnage Sedan 2009     1.0000    1.0000    1.0000         5
+                           Bentley Mulsanne Sedan 2011     1.0000    1.0000    1.0000         8
+                     Bentley Continental GT Coupe 2012     1.0000    1.0000    1.0000         2
+                     Bentley Continental GT Coupe 2007     1.0000    1.0000    1.0000         4
+            Bentley Continental Flying Spur Sedan 2007     1.0000    1.0000    1.0000         6
+                  Bugatti Veyron 16.4 Convertible 2009     0.5000    0.8000    0.6154         5
+                        Bugatti Veyron 16.4 Coupe 2009     0.7143    0.6250    0.6667         8
+                                   Buick Regal GS 2012     1.0000    1.0000    1.0000         1
+                                Buick Rainier SUV 2007     0.8000    1.0000    0.8889         4
+                               Buick Verano Sedan 2012     0.5000    0.5000    0.5000         2
+                                Buick Enclave SUV 2012     1.0000    1.0000    1.0000         5
+                             Cadillac CTS-V Sedan 2012     1.0000    0.8333    0.9091         6
+                                 Cadillac SRX SUV 2012     0.7500    1.0000    0.8571         3
+                   Cadillac Escalade EXT Crew Cab 2007     1.0000    0.8750    0.9333         8
+         Chevrolet Silverado 1500 Hybrid Crew Cab 2012     0.3333    0.3333    0.3333         3
+                   Chevrolet Corvette Convertible 2012     0.8750    0.7778    0.8235         9
+                           Chevrolet Corvette ZR1 2012     0.8000    0.8000    0.8000         5
+       Chevrolet Corvette Ron Fellows Edition Z06 2007     1.0000    1.0000    1.0000         3
+                           Chevrolet Traverse SUV 2012     0.8333    1.0000    0.9091         5
+                     Chevrolet Camaro Convertible 2012     1.0000    1.0000    1.0000         4
+                                 Chevrolet HHR SS 2010     0.0000    0.0000    0.0000         0
+                           Chevrolet Impala Sedan 2007     1.0000    0.7500    0.8571         4
+                       Chevrolet Tahoe Hybrid SUV 2012     1.0000    1.0000    1.0000         2
+                            Chevrolet Sonic Sedan 2012     1.0000    0.8333    0.9091         6
+                      Chevrolet Express Cargo Van 2007     0.5000    0.2500    0.3333         4
+                     Chevrolet Avalanche Crew Cab 2012     1.0000    0.8000    0.8889         5
+                              Chevrolet Cobalt SS 2010     1.0000    1.0000    1.0000         5
+                    Chevrolet Malibu Hybrid Sedan 2010     1.0000    0.8571    0.9231         7
+                         Chevrolet TrailBlazer SS 2009     1.0000    1.0000    1.0000         8
+           Chevrolet Silverado 2500HD Regular Cab 2012     0.6667    0.6667    0.6667         3
+    Chevrolet Silverado 1500 Classic Extended Cab 2007     1.0000    1.0000    1.0000         3
+                            Chevrolet Express Van 2007     0.0000    0.0000    0.0000         1
+                      Chevrolet Monte Carlo Coupe 2007     0.8571    1.0000    0.9231         6
+                           Chevrolet Malibu Sedan 2007     1.0000    0.7143    0.8333         7
+            Chevrolet Silverado 1500 Extended Cab 2012     0.3333    0.3333    0.3333         3
+             Chevrolet Silverado 1500 Regular Cab 2012     0.7500    1.0000    0.8571         3
+                               Chrysler Aspen SUV 2009     0.8750    1.0000    0.9333         7
+                     Chrysler Sebring Convertible 2010     1.0000    1.0000    1.0000         3
+                Chrysler Town and Country Minivan 2012     1.0000    0.7500    0.8571         8
+                               Chrysler 300 SRT-8 2010     1.0000    1.0000    1.0000         5
+                   Chrysler Crossfire Convertible 2008     1.0000    1.0000    1.0000         4
+                  Chrysler PT Cruiser Convertible 2008     1.0000    1.0000    1.0000         5
+                              Daewoo Nubira Wagon 2002     1.0000    1.0000    1.0000         5
+                              Dodge Caliber Wagon 2012     0.0000    0.0000    0.0000         1
+                              Dodge Caliber Wagon 2007     0.8000    0.8000    0.8000         5
+                            Dodge Caravan Minivan 1997     1.0000    1.0000    1.0000         3
+                   Dodge Ram Pickup 3500 Crew Cab 2010     1.0000    0.7500    0.8571         4
+                   Dodge Ram Pickup 3500 Quad Cab 2009     0.6000    1.0000    0.7500         3
+                         Dodge Sprinter Cargo Van 2009     1.0000    1.0000    1.0000         2
+                                Dodge Journey SUV 2012     1.0000    1.0000    1.0000         3
+                            Dodge Dakota Crew Cab 2010     1.0000    1.0000    1.0000         5
+                            Dodge Dakota Club Cab 2007     1.0000    0.7500    0.8571         4
+                               Dodge Magnum Wagon 2008     0.7500    1.0000    0.8571         3
+                            Dodge Challenger SRT8 2011     1.0000    1.0000    1.0000         1
+                                Dodge Durango SUV 2012     0.0000    0.0000    0.0000         1
+                                Dodge Durango SUV 2007     1.0000    1.0000    1.0000         6
+                              Dodge Charger Sedan 2012     1.0000    0.8750    0.9333         8
+                              Dodge Charger SRT-8 2009     0.8000    1.0000    0.8889         4
+                            Eagle Talon Hatchback 1998     1.0000    0.6000    0.7500         5
+                                  FIAT 500 Abarth 2012     1.0000    1.0000    1.0000         3
+                             FIAT 500 Convertible 2012     0.8333    1.0000    0.9091         5
+                                 Ferrari FF Coupe 2012     1.0000    1.0000    1.0000         2
+                   Ferrari California Convertible 2012     1.0000    1.0000    1.0000         4
+                   Ferrari 458 Italia Convertible 2012     1.0000    1.0000    1.0000         4
+                         Ferrari 458 Italia Coupe 2012     1.0000    1.0000    1.0000         2
+                               Fisker Karma Sedan 2012     1.0000    0.7500    0.8571         4
+                   Ford F-450 Super Duty Crew Cab 2012     0.6000    1.0000    0.7500         3
+                         Ford Mustang Convertible 2007     1.0000    1.0000    1.0000         2
+                            Ford Freestar Minivan 2007     0.8333    0.8333    0.8333         6
+                           Ford Expedition EL SUV 2009     1.0000    0.8571    0.9231         7
+                                    Ford Edge SUV 2012     0.3333    0.6667    0.4444         3
+                             Ford Ranger SuperCab 2011     1.0000    0.6667    0.8000         6
+                                    Ford GT Coupe 2006     1.0000    1.0000    1.0000         4
+                           Ford F-150 Regular Cab 2012     1.0000    0.5000    0.6667         2
+                           Ford F-150 Regular Cab 2007     0.7500    1.0000    0.8571         3
+                                 Ford Focus Sedan 2007     1.0000    0.8750    0.9333         8
+                          Ford E-Series Wagon Van 2012     1.0000    1.0000    1.0000         4
+                                Ford Fiesta Sedan 2012     1.0000    1.0000    1.0000         7
+                                  GMC Terrain SUV 2012     1.0000    1.0000    1.0000         1
+                                   GMC Savana Van 2012     0.8000    1.0000    0.8889         4
+                             GMC Yukon Hybrid SUV 2012     0.8000    1.0000    0.8889         4
+                                   GMC Acadia SUV 2012     1.0000    1.0000    1.0000         3
+                          GMC Canyon Extended Cab 2012     1.0000    1.0000    1.0000         4
+                            Geo Metro Convertible 1993     0.7500    1.0000    0.8571         3
+                              HUMMER H3T Crew Cab 2010     1.0000    1.0000    1.0000         4
+                           HUMMER H2 SUT Crew Cab 2009     1.0000    1.0000    1.0000         2
+                            Honda Odyssey Minivan 2012     1.0000    1.0000    1.0000         5
+                            Honda Odyssey Minivan 2007     1.0000    1.0000    1.0000         5
+                               Honda Accord Coupe 2012     0.5000    1.0000    0.6667         1
+                               Honda Accord Sedan 2012     1.0000    1.0000    1.0000         5
+                       Hyundai Veloster Hatchback 2012     0.8000    1.0000    0.8889         4
+                             Hyundai Santa Fe SUV 2012     1.0000    1.0000    1.0000         4
+                               Hyundai Tucson SUV 2012     1.0000    0.5000    0.6667         2
+                             Hyundai Veracruz SUV 2012     0.6667    1.0000    0.8000         2
+                      Hyundai Sonata Hybrid Sedan 2012     1.0000    1.0000    1.0000         7
+                            Hyundai Elantra Sedan 2007     0.5000    1.0000    0.6667         2
+                             Hyundai Accent Sedan 2012     1.0000    1.0000    1.0000         2
+                            Hyundai Genesis Sedan 2012     1.0000    1.0000    1.0000         1
+                             Hyundai Sonata Sedan 2012     0.8571    0.8571    0.8571         7
+                Hyundai Elantra Touring Hatchback 2012     0.6667    0.6667    0.6667         3
+                              Hyundai Azera Sedan 2012     0.7500    0.6000    0.6667         5
+                             Infiniti G Coupe IPL 2012     1.0000    1.0000    1.0000         3
+                                Infiniti QX56 SUV 2011     1.0000    1.0000    1.0000         5
+                               Isuzu Ascender SUV 2008     1.0000    1.0000    1.0000         1
+                                    Jaguar XK XKR 2012     1.0000    0.6667    0.8000         9
+                                 Jeep Patriot SUV 2012     1.0000    1.0000    1.0000         2
+                                Jeep Wrangler SUV 2012     1.0000    1.0000    1.0000         5
+                                 Jeep Liberty SUV 2012     1.0000    1.0000    1.0000         4
+                          Jeep Grand Cherokee SUV 2012     1.0000    0.8000    0.8889        10
+                                 Jeep Compass SUV 2012     1.0000    1.0000    1.0000         3
+                       Lamborghini Reventon Coupe 2008     0.8889    1.0000    0.9412         8
+                      Lamborghini Aventador Coupe 2012     1.0000    0.9091    0.9524        11
+       Lamborghini Gallardo LP 570-4 Superleggera 2012     1.0000    1.0000    1.0000         3
+                         Lamborghini Diablo Coupe 2001     1.0000    1.0000    1.0000         2
+                       Land Rover Range Rover SUV 2012     0.7500    1.0000    0.8571         3
+                               Land Rover LR2 SUV 2012     1.0000    1.0000    1.0000         3
+                           Lincoln Town Car Sedan 2011     1.0000    1.0000    1.0000         4
+                 MINI Cooper Roadster Convertible 2012     1.0000    0.9000    0.9474        10
+                    Maybach Landaulet Convertible 2012     1.0000    1.0000    1.0000         1
+                                Mazda Tribute SUV 2011     1.0000    1.0000    1.0000         4
+                            McLaren MP4-12C Coupe 2012     1.0000    1.0000    1.0000         2
+              Mercedes-Benz 300-Class Convertible 1993     0.6667    0.5000    0.5714         4
+                      Mercedes-Benz C-Class Sedan 2012     0.5714    1.0000    0.7273         4
+                     Mercedes-Benz SL-Class Coupe 2009     1.0000    1.0000    1.0000         3
+                      Mercedes-Benz E-Class Sedan 2012     0.8750    0.8750    0.8750         8
+                      Mercedes-Benz S-Class Sedan 2012     1.0000    1.0000    1.0000         4
+                       Mercedes-Benz Sprinter Van 2012     1.0000    1.0000    1.0000         5
+                          Mitsubishi Lancer Sedan 2012     1.0000    0.8333    0.9091         6
+                            Nissan Leaf Hatchback 2012     1.0000    1.0000    1.0000         4
+                          Nissan NV Passenger Van 2012     1.0000    1.0000    1.0000         5
+                            Nissan Juke Hatchback 2012     1.0000    1.0000    1.0000         6
+                               Nissan 240SX Coupe 1998     1.0000    1.0000    1.0000         3
+                              Plymouth Neon Coupe 1999     1.0000    1.0000    1.0000         4
+                           Porsche Panamera Sedan 2012     1.0000    1.0000    1.0000         6
+                        Ram C/V Cargo Van Minivan 2012     0.7500    1.0000    0.8571         3
+   Rolls-Royce Phantom Drophead Coupe Convertible 2012     1.0000    1.0000    1.0000         5
+                          Rolls-Royce Ghost Sedan 2012     0.7500    0.7500    0.7500         4
+                        Rolls-Royce Phantom Sedan 2012     0.7500    0.7500    0.7500         4
+                               Scion xD Hatchback 2012     1.0000    1.0000    1.0000         3
+                            Spyker C8 Convertible 2009     0.5000    1.0000    0.6667         2
+                                  Spyker C8 Coupe 2009     0.8333    0.7143    0.7692         7
+                               Suzuki Aerio Sedan 2007     0.6667    1.0000    0.8000         2
+                             Suzuki Kizashi Sedan 2012     1.0000    1.0000    1.0000         2
+                             Suzuki SX4 Hatchback 2012     1.0000    0.7500    0.8571         8
+                                 Suzuki SX4 Sedan 2012     0.5000    1.0000    0.6667         2
+                              Tesla Model S Sedan 2012     0.4000    1.0000    0.5714         2
+                               Toyota Sequoia SUV 2012     1.0000    1.0000    1.0000         4
+                               Toyota Camry Sedan 2012     1.0000    1.0000    1.0000         5
+                             Toyota Corolla Sedan 2012     1.0000    0.6667    0.8000         3
+                               Toyota 4Runner SUV 2012     1.0000    1.0000    1.0000         9
+                        Volkswagen Golf Hatchback 2012     0.7500    0.6000    0.6667         5
+                        Volkswagen Golf Hatchback 1991     1.0000    1.0000    1.0000         2
+                      Volkswagen Beetle Hatchback 2012     0.8333    1.0000    0.9091         5
+                              Volvo C30 Hatchback 2012     1.0000    1.0000    1.0000         5
+                                  Volvo 240 Sedan 1993     0.8000    1.0000    0.8889         4
+                                   Volvo XC90 SUV 2007     1.0000    1.0000    1.0000         2
+                         smart fortwo Convertible 2012     1.0000    1.0000    1.0000         2
+
+                                              accuracy                         0.8748       815
+                                             macro avg     0.8655    0.8695    0.8532       815
+                                          weighted avg     0.8993    0.8748    0.8747       815
+
+2026-05-03 21:19:47  INFO      utils.evaluate — Per-class report saved -> F:\CODE\vehicle_project\outputs\visualizations\classification_report_resnet50.txt
+2026-05-03 21:19:47  INFO      utils.evaluate — Confusion matrix saved -> F:\CODE\vehicle_project\outputs\visualizations\confusion_matrix_resnet50.png
+2026-05-03 21:20:46  INFO      utils.evaluate — Grad-CAM grid saved -> F:\CODE\vehicle_project\outputs\visualizations\resnet50\gradcam_grid.png
+2026-05-03 21:20:46  INFO      utils.evaluate — Evaluation complete — top-1: 87.48%  top-5: 98.16%
