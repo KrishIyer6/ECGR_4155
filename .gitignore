@@ -1,0 +1,18 @@
+# Dataset (download separately; too large for Git)
+stanford_cars/
+
+# Training outputs and model weights
+outputs/
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.env
+.venv/
